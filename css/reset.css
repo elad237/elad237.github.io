@@ -1,16 +1,3 @@
-/*******************
- Box Sizing
- *******************/
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 /****************************
  Generic Margins and Paddings
  ****************************/
@@ -86,7 +73,7 @@ button * {
  Easy responsive for media elements
  ***********************************/
 
- img,
+nav  img,
 svg,
 iframe,
 video,

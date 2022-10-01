@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
 .backgrnd-clr {
   background-color: white;
 }
@@ -14,8 +20,10 @@
 }
 
 /* Styling the header section (tool bar) */
-.header {
-  margin: 30px;
+.header,
+.portfolio-wrapper {
+  width: 90%;
+  margin: 30px auto;
 }
 
 .navbar {
@@ -30,21 +38,24 @@
   background-image: url("../images/icons/header-illsutration-mobile@3x.png");
   background-repeat: no-repeat;
   background-size: cover;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   height: 600px;
   padding: 10px;
-  align-items: center;
 }
 
 /* styling the social media section */
 .social-media {
   display: flex;
+  justify-content: center;
   width: 70%;
+  gap: 10%;
+  margin-bottom: 10%;
 }
 
 .social-links {
-  flex: 1;
-  flex-basis: 35%;
+  flex-basis: content;
 }
 
 /* styling the headline introductory message (typography) */
@@ -57,6 +68,10 @@
 .text-color {
   display: block;
   color: #36b37e;
+}
+
+.scroll {
+  margin-bottom: 10%;
 }
 
 /* Styling the supporting Text in the headline section */
@@ -81,8 +96,9 @@
 /* Creating a grid items wrapping effect */
 .portfolio-project {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 32px 24px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 377px));
+  gap: 30px;
+  justify-content: center;
 }
 
 .project-item {
@@ -126,6 +142,22 @@
   border-radius: 4px;
 }
 
+.work-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 10% 0;
+}
+
+.line {
+  width: 50px;
+  height: 5px;
+  background: #36b37f;
+  border-radius: 10px;
+}
+
 .project-item-btn {
   width: fit-content;
   margin-block: 13px 24px;
@@ -152,12 +184,8 @@
 /* About Style
 ------------------------------------ */
 .about-wrapper > * {
-  padding-inline: 20px;
+  width: 100%;
   text-align: center;
-}
-
-.about-content > * + * {
-  margin-block-start: 24px;
 }
 
 .about-content-header {
@@ -170,10 +198,22 @@
 }
 
 .about-content-text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
   color: #172b4d;
+  width: 90%;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.about-content {
+  background-image: url('/images/icons/Group.png'), url('/images/icons/MaskGroup.png');
+  background-size: 50px 100px;
+  background-repeat: no-repeat;
+  background-position: bottom left, top right;
 }
 
 .about-content-btn {
@@ -202,14 +242,18 @@
 .about-tech {
   padding-block: 59px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 32px 24px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 377px));
+  gap: 32px;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .about-tech-stack {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding-block: 40px 24px;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;

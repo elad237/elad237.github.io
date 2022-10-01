@@ -1,0 +1,260 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.backgrnd-clr {
+  background-color: white;
+}
+
+.main-content {
+  height: 100vh;
+}
+
+/* Styling the header section (tool bar) */
+.header {
+  margin: 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling the headline section */
+.head-line {
+  display: flex;
+  background-image: url("../images/icons/stripe.png");
+  background-image: url("../images/icons/header-illsutration-mobile@3x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  height: 600px;
+  padding: 10px;
+  align-items: center;
+}
+
+/* styling the social media section */
+.social-media {
+  display: flex;
+  width: 70%;
+}
+
+.social-links {
+  flex: 1;
+  flex-basis: 35%;
+}
+
+/* styling the headline introductory message (typography) */
+.greeting-text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.text-color {
+  display: block;
+  color: #36b37e;
+}
+
+/* Styling the supporting Text in the headline section */
+.supportig-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 9px;
+  flex: none;
+  flex-grow: 0;
+  width: 95%;
+}
+
+.headline-box {
+  margin-top: 50px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  text-align: center;
+  color: #172b4d;
+}
+
+/* Creating a grid items wrapping effect */
+.portfolio-project {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px 24px;
+}
+
+.project-item {
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.project-item > * + * {
+  margin-block-start: 16px;
+}
+
+.project-item-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-item-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+}
+
+.project-item-stack {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.project-item-stack li {
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  background: #ebf0ee;
+  border-radius: 4px;
+}
+
+.project-item-btn {
+  width: fit-content;
+  margin-block: 13px 24px;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.project-item-btn:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.project-item-btn:active {
+  background-color: #008552;
+}
+
+/* About Style
+------------------------------------ */
+.about-wrapper > * {
+  padding-inline: 20px;
+  text-align: center;
+}
+
+
+
+.about-content > * + * {
+  margin-block-start: 24px;
+}
+
+.about-content-header {
+  margin-inline: 20px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.about-content-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #172b4d;
+}
+
+.about-content-btn {
+  width: fit-content;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.about-content-btn:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.about-content-btn:active {
+  background-color: #008552;
+}
+
+/* Creating a grid items wrapping effect */
+.about-tech {
+  padding-block: 59px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px 24px;
+}
+
+.about-tech-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 40px 24px;
+  background: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+}
+
+.about-tech-img {
+  width: 80px;
+  height: 80px;
+  margin-block-end: 64px;
+  border-radius: 50%;
+  padding: 18px;
+  background-color: #fff;
+}
+
+.about-tech-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tech-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #344563;
+  margin-block-end: 24px;
+}
+
+.about-tech-items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.about-tech-items li {
+  padding: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+  background-color: #fff;
+  border-radius: 8px;
+}

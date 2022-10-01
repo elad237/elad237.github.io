@@ -211,7 +211,7 @@ body {
 
 .about-content {
   background-image: url('/images/icons/Group.png'), url('/images/icons/MaskGroup.png');
-  background-size: 50px 100px;
+  background-size: 50px 90px;
   background-repeat: no-repeat;
   background-position: bottom left, top right;
 }

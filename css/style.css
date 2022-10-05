@@ -210,7 +210,8 @@ body {
 }
 
 .about-content {
-  background-image: url('../images/icons/Group.png'), url('../images/icons/MaskGroup.png');
+  background-image: url("../images/icons/Group.png"),
+    url("../images/icons/MaskGroup.png");
   background-size: 50px 90px;
   background-repeat: no-repeat;
   background-position: bottom left, top right;
@@ -300,6 +301,7 @@ body {
   background-color: #fff;
   border-radius: 8px;
 }
+
 /* contact form styling */
 .contact {
   display: flex;
@@ -328,6 +330,7 @@ body {
   width: 327px;
   justify-content: flex-start;
 }
+
 input {
   height: 48px;
   width: 327px;
@@ -403,7 +406,7 @@ textarea:focus {
 input:valid {
   outline: solid #36b37f 2px;
 }
+
 .form-element {
   font-size: 10px;
-  }
-  
+}

@@ -307,7 +307,7 @@ body {
 .contact {
   display: flex;
   flex-wrap: wrap;
-  margin: 3%;
+  margin: 10%;
   justify-content: center;
   align-content: center;
   background-image: url(../img/Frame.svg);
@@ -322,6 +322,7 @@ body {
   font-weight: 700;
   text-align: center;
   color: #172b4d;
+  margin: 30px auto;
 }
 
 .contact-form {
@@ -329,6 +330,7 @@ body {
   flex-wrap: wrap;
   height: 363px;
   width: 327px;
+  margin: 50px auto;
   justify-content: flex-start;
 }
 
@@ -339,6 +341,7 @@ input {
   background: #fff;
   border: 1px solid #d0d9d4;
   outline: none;
+  padding: 10px;
 }
 
 textarea {
@@ -349,6 +352,8 @@ textarea {
   border: 1px solid #60c095;
   outline: none;
   text-align-last: left;
+  margin: 30px auto;
+  padding: 10px;
 }
 
 .footer {

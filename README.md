@@ -8,7 +8,7 @@
 
 - [x] Setting up the initial project structure
 - [x] mobile version skeleton
-- [ ] Contact form
+- [x] Contact form
 - [ ] Desktop version
 - [ ] Application deploy
 - [ ] Evaluate accessibility

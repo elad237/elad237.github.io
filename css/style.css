@@ -23,12 +23,22 @@ body {
 .header,
 .portfolio-wrapper {
   width: 90%;
-  margin: 30px auto;
+  margin: 5% auto;
+  padding: 10px;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.navlist {
+  display: none;
+}
+
+.navbar > img {
+  height: 20px;
 }
 
 /* Styling the headline section */
@@ -41,7 +51,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 600px;
+  height: 500px;
   padding: 10px;
 }
 
@@ -61,8 +71,8 @@ body {
 /* styling the headline introductory message (typography) */
 .greeting-text {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 25px;
+  line-height: 40px;
 }
 
 .text-color {
@@ -79,14 +89,14 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  padding: 9px;
+  padding: 0 16%;
   flex: none;
   flex-grow: 0;
   width: 95%;
 }
 
 .headline-box {
-  margin-top: 50px;
+  margin-top: 3%;
   font-family: "Inter", sans-serif;
   font-style: normal;
   text-align: center;
@@ -415,4 +425,87 @@ input:valid {
 
 .form-element {
   font-size: 10px;
+}
+
+/* Desktop version and media queries */
+
+@media screen and (min-width: 768px) {
+  .contact-message {
+    flex-basis: 40%;
+    margin: 0;
+    padding-top: 5%;
+    text-align: left;
+    font-size: 25px;
+  }
+
+  .contact-form {
+    margin: 0;
+    flex-basis: 57%;
+  }
+
+  .form-element {
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin: 0;
+  }
+
+  .btn {
+    justify-content: unset;
+    margin: 0;
+  }
+
+  .email {
+    display: none;
+  }
+
+  .about-tech {
+    grid-template-columns: repeat(auto-fit, minmax(30%, 31.5%));
+    gap: 2%;
+  }
+
+  .portfolio-project {
+    grid-template-columns: repeat(auto-fit, minmax(30%, 31.5%));
+    gap: 2%;
+  }
+
+  .navbar > a,
+  .navbar > img {
+    display: none;
+  }
+
+  .navlist {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    gap: 2%;
+  }
+
+  .navlinks {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    color: #1349a5;
+  }
+
+  .head-line {
+    background-image: url("../img/Header-llustration-desktop.png");
+  }
+
+  .contact {
+    background-image: url(../img/footer-background2.png), url(../img/footer-background3.png), url(../img/Frame.svg);
+    background-repeat: no-repeat;
+    background-size: 50px, 100px;
+    background-position: bottom left, 70px 320px, bottom right;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: flex-start;
+    gap: 3%;
+  }
 }

@@ -23,7 +23,7 @@ body {
 .header,
 .portfolio-wrapper {
   width: 90%;
-  margin: 5% auto;
+  margin: 0 auto 5%;
   padding: 10px;
 }
 
@@ -371,7 +371,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   width: 75%;
-  height: 189px;
+  height: 50px;
   font-weight: 400;
   font-size: 20px;
   text-align: center;
@@ -491,7 +491,7 @@ input:valid {
     font-weight: 600;
     line-height: 20px;
     text-align: center;
-    color: #1349a5;
+    color: #555353;
   }
 
   .head-line {
@@ -501,11 +501,16 @@ input:valid {
   .contact {
     background-image: url(../img/footer-background2.png), url(../img/footer-background3.png), url(../img/Frame.svg);
     background-repeat: no-repeat;
-    background-size: 50px, 100px;
-    background-position: bottom left, 70px 320px, bottom right;
+    background-size: 100px, 100px, 50px;
+    background-position: 20px 350px, 120px 400px, bottom right;
     width: 90%;
     margin: 0 auto;
     justify-content: flex-start;
+    gap: 3%;
+    height: 500px;
+  }
+
+  .social-media {
     gap: 3%;
   }
 }

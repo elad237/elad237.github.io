@@ -436,6 +436,7 @@ input:valid {
     padding-top: 5%;
     text-align: left;
     font-size: 25px;
+    transition: ease-in 1s;
   }
 
   .contact-form {

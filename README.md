@@ -10,13 +10,15 @@
 - [x] mobile version skeleton
 - [x] Contact form
 - [x] Desktop version
-- [ ] Application deploy
+- [x] Application deploy
+## Live Demo
+<a href="https://elad237.github.io/mobile-finish-version/">Live Demo Link</a>
 - [ ] Evaluate accessibility
 - [ ] Mobile menu
 - [ ] Details modal
 - [ ] Validate contact form
 - [ ] Preserve data in the browser
-- [ ] Finalising the project page
+- [ ] Finalizing the project page
 
 ## Built With
 

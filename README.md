@@ -12,7 +12,7 @@
 - [x] Desktop version
 - [x] Application deploy
 ## Live Demo
-<a href=" https://elad237.github.io/mobile-finish-version/">Live Demo Link</a>
+<a href="https://elad237.github.io/mobile-finish-version/">Live Demo Link</a>
 - [ ] Evaluate accessibility
 - [ ] Mobile menu
 - [ ] Details modal

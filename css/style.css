@@ -41,6 +41,12 @@ body {
   height: 20px;
 }
 
+.bars {
+  background: transparent;
+  border: none;
+}
+
+
 /* Styling the headline section */
 .head-line {
   display: flex;

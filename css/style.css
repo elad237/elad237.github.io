@@ -27,11 +27,6 @@ body {
   padding: 10px;
 }
 
-.hamburger-menu {
-  position: absolute;
-  right: 10%;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -430,6 +425,23 @@ input:valid {
 
 .form-element {
   font-size: 10px;
+}
+
+.open {
+  background-color: #387797;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+
+.close {
+  position: fixed;
+  right: 2%;
+  padding: 8px;
 }
 
 /* Desktop version and media queries */

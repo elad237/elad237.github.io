@@ -27,6 +27,11 @@ body {
   padding: 10px;
 }
 
+.hamburger-menu {
+  position: absolute;
+  right: 10%;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;

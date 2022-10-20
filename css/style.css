@@ -1,4 +1,7 @@
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable-next-line comment-empty-line-before */
 /* General Styling */
+
 * {
   margin: 0;
   padding: 0;
@@ -41,7 +44,7 @@ body {
   height: 20px;
 }
 
-.navlistmoblie  > .nav-items a{
+.navlistmoblie > .nav-items a {
   text-decoration: none;
 }
 
@@ -437,8 +440,8 @@ input:valid {
 }
 
 .open {
-flex-direction: column;
-gap: 30px;
+  flex-direction: column;
+  gap: 30px;
   background-color: rgb(243, 232, 232);
   backdrop-filter: blur(5px);
   position: fixed;
@@ -460,7 +463,7 @@ gap: 30px;
   margin-left: auto;
 }
 
-.show{
+.show {
   display: flex;
 }
 
@@ -480,7 +483,7 @@ gap: 30px;
     transition: ease-in 1s;
   }
 
-  .open{
+  .open {
     display: none;
   }
 

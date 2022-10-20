@@ -521,6 +521,10 @@ input:valid {
     gap: 2%;
   }
 
+  .bars {
+    display: none;
+  }
+
   .navbar > a,
   .navbar > img {
     display: none;

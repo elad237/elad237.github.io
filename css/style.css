@@ -41,19 +41,15 @@ body {
   height: 20px;
 }
 
-<<<<<<< HEAD
 .navlistmoblie  > .nav-items a{
   text-decoration: none;
 }
 
-=======
 .bars {
   background: transparent;
   border: none;
 }
 
-
->>>>>>> 4650e4864939d42969ccf4f9743560b5786cadfc
 /* Styling the headline section */
 .head-line {
   display: flex;

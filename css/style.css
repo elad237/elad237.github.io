@@ -41,6 +41,10 @@ body {
   height: 20px;
 }
 
+.navlistmoblie  > .nav-items a{
+  text-decoration: none;
+}
+
 /* Styling the headline section */
 .head-line {
   display: flex;
@@ -428,20 +432,35 @@ input:valid {
 }
 
 .open {
-  background-color: #387797;
+flex-direction: column;
+gap: 30px;
+  background-color: rgb(243, 232, 232);
   backdrop-filter: blur(5px);
   position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
-  display: none;
 }
 
 .close {
-  position: fixed;
-  right: 2%;
+  display: flex;
+  width: 90%;
+  margin: 4% auto 0;
   padding: 8px;
+  text-align: left;
+}
+
+.close > img {
+  margin-left: auto;
+}
+
+.show{
+  display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Desktop version and media queries */
@@ -454,6 +473,10 @@ input:valid {
     text-align: left;
     font-size: 25px;
     transition: ease-in 1s;
+  }
+
+  .open{
+    display: none;
   }
 
   .contact-form {

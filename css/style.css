@@ -1,4 +1,7 @@
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable-next-line comment-empty-line-before */
 /* General Styling */
+
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +42,15 @@ body {
 
 .navbar > img {
   height: 20px;
+}
+
+.navlistmoblie > .nav-items a {
+  text-decoration: none;
+}
+
+.bars {
+  background: transparent;
+  border: none;
 }
 
 /* Styling the headline section */
@@ -427,6 +439,38 @@ input:valid {
   font-size: 10px;
 }
 
+.open {
+  flex-direction: column;
+  gap: 30px;
+  background-color: rgb(243, 232, 232);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.close {
+  display: flex;
+  width: 90%;
+  margin: 4% auto 0;
+  padding: 8px;
+  text-align: left;
+}
+
+.close > img {
+  margin-left: auto;
+}
+
+.show {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
 /* Desktop version and media queries */
 
 @media screen and (min-width: 768px) {
@@ -437,6 +481,10 @@ input:valid {
     text-align: left;
     font-size: 25px;
     transition: ease-in 1s;
+  }
+
+  .open {
+    display: none;
   }
 
   .contact-form {
@@ -471,6 +519,10 @@ input:valid {
   .portfolio-project {
     grid-template-columns: repeat(auto-fit, minmax(30%, 31.5%));
     gap: 2%;
+  }
+
+  .bars {
+    display: none;
   }
 
   .navbar > a,

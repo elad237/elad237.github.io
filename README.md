@@ -13,8 +13,8 @@
 - [x] Application deploy
 ## Live Demo
 <a href="https://elad237.github.io/">Live Demo Link</a>
-- [ ] Evaluate accessibility
-- [ ] Mobile menu
+- [x] Evaluate accessibility
+- [x] Mobile menu
 - [ ] Details modal
 - [ ] Validate contact form
 - [ ] Preserve data in the browser

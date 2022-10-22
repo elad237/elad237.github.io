@@ -128,7 +128,7 @@ return projectCard;
 };
 
 const displayPopUp = (object) => {
-  const popUp = `<i class="fa fa-times" id="closeddds"></i>
+  const popUp = `<div class="closebtn"><i class="fa fa-times" id="closeddds"></i></div>
   <section class="project1 project-text1" id="project1">
     <div
       class="featured-image-container"
@@ -163,16 +163,16 @@ projects.forEach((project) => {
 
 projectContainer.addEventListener('click', (e) => {
   if(e.target.classList.contains('project-item-btn')) {
-    console.log(e.target.id)
     const filteredProject = projects.filter((project) => project.id == e.target.id)
     popUp.innerHTML = displayPopUp(filteredProject[0]);
-    popUp.classList.remove('hidden')
+    popUp.classList.remove('hidden');
+    popUp.classList.add('show')
+    
   }
 });
 
 popUp.addEventListener('click', (e) => {
   if(e.target.classList.contains('fa')) {
     popUp.classList.add('hidden')
-    console.log(e.target.id)
   }
 })

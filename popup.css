@@ -133,6 +133,16 @@ h4 {
   color: #344563;
 }
 
+#error-mail,
+#error {
+  color: red;
+}
+
+#error {
+  margin-left: 2%;
+  font-size: 16px;
+}
+
 @media screen and (max-width: 768) {
   p {
     display: block;

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="popup.css" >
   </head>
   <body>
     <!--Header Section (Toolbar)-->
@@ -72,91 +73,14 @@
         <img src="images/icons/Action.png" alt="scroll button" class="scroll">
       </section>
 
+      <div id="work-popup" class="hidden"></div>
       <section class="portfolio-wrapper" id="portfolio">
         <div class="work-heading">
         <h2 class="portfolio-header">My Recent <br>Works</h2>
         <span class="line"></span>
     </div>
-        <section class="portfolio-project">
-            <figure class="project-item">
-                <img class="project-item-img" src="img/image-placeholder.png" alt="image placeholder">
-                <figcaption class="project-item-caption">
-                    <h3 class="project-item-title">Multi-Post Stories Gain+Glory</h3>
-                    <ul class="project-item-stack">
-                        <li>Ruby on rails</li>
-                        <li>css</li>
-                        <li>JavaScript</li>
-                        <li>html</li>
-                    </ul>
-                    <button class="project-item-btn">See project</button>
-                </figcaption>
-            </figure>
-            <figure class="project-item">
-                <img class="project-item-img" src="img/image-placeholder.png" alt="image placeholder">
-                <figcaption class="project-item-caption">
-                    <h3 class="project-item-title">Multi-Post Stories Gain+Glory</h3>
-                    <ul class="project-item-stack">
-                        <li>Ruby on rails</li>
-                        <li>css</li>
-                        <li>JavaScript</li>
-                        <li>html</li>
-                    </ul>
-                    <button class="project-item-btn">See project</button>
-                </figcaption>
-            </figure>
-            <figure class="project-item">
-                <img class="project-item-img" src="img/image-placeholder.png" alt="image placeholder">
-                <figcaption class="project-item-caption">
-                    <h3 class="project-item-title">Multi-Post Stories Gain+Glory</h3>
-                    <ul class="project-item-stack">
-                        <li>Ruby on rails</li>
-                        <li>css</li>
-                        <li>JavaScript</li>
-                        <li>html</li>
-                    </ul>
-                    <button class="project-item-btn">See project</button>
-                </figcaption>
-            </figure>
-            <figure class="project-item">
-                <img class="project-item-img" src="img/image-placeholder.png" alt="image placeholder">
-                <figcaption class="project-item-caption">
-                    <h3 class="project-item-title">Multi-Post Stories Gain+Glory</h3>
-                    <ul class="project-item-stack">
-                        <li>Ruby on rails</li>
-                        <li>css</li>
-                        <li>JavaScript</li>
-                        <li>html</li>
-                    </ul>
-                    <button class="project-item-btn">See project</button>
-                </figcaption>
-            </figure>
-            <figure class="project-item">
-                <img class="project-item-img" src="img/image-placeholder.png" alt="image placeholder">
-                <figcaption class="project-item-caption">
-                    <h3 class="project-item-title">Multi-Post Stories Gain+Glory</h3>
-                    <ul class="project-item-stack">
-                        <li>Ruby on rails</li>
-                        <li>css</li>
-                        <li>JavaScript</li>
-                        <li>html</li>
-                    </ul>
-                    <button class="project-item-btn">See project</button>
-                </figcaption>
-            </figure>
-            <figure class="project-item">
-                <img class="project-item-img" src="img/image-placeholder.png" alt="image placeholder">
-                <figcaption class="project-item-caption">
-                    <h3 class="project-item-title">Multi-Post Stories Gain+Glory</h3>
-                    <ul class="project-item-stack">
-                        <li>Ruby on rails</li>
-                        <li>css</li>
-                        <li>JavaScript</li>
-                        <li>html</li>
-                    </ul>
-                    <button class="project-item-btn">See project</button>
-                </figcaption>
-            </figure>
-        </section>
+        <div class="portfolio-project" id="work">
+        </div>
     </section>
     <!-- ABOUT MYSELF SECTION -->
     <section class="about-wrapper" id="about">
@@ -258,6 +182,7 @@
 </div>
 
 <script src="apps.js"></script>
+<script src="popup.js"></script>
 
     </main>
   </body>

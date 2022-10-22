@@ -15,9 +15,9 @@
 <a href="https://elad237.github.io/">Live Demo Link</a>
 - [x] Evaluate accessibility
 - [x] Mobile menu
-- [ ] Details modal
-- [ ] Validate contact form
-- [ ] Preserve data in the browser
+- [x] Details modal
+- [x] Validate contact form
+- [x] Preserve data in the browser
 - [ ] Finalizing the project page
 
 ## Built With

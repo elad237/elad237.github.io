@@ -4,55 +4,192 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/e008c3c639.js"></script>
+
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css" >
-    <link rel="stylesheet" href="popup.css" >
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="anims.css" />
   </head>
   <body>
-    <i class="fa fa-times" id="closeddds"></i>
     <!--Header Section (Toolbar)-->
     <header class="header backgrnd-clr">
+      <a href="index.html" class="logo">Welcome</a>
+        <img
+          class="hamburger-menu"
+          src="images/Union.png"
+          alt="hamburger-menu"
+        />
+         <img
+          class="closed"
+          src="images/Icon-Cancel.png"
+          alt="cancel icon"
+        />
       <nav class="navbar">
-        <a href="index.html"><img src="images/icons/Welcome.png" alt="logo" /></a>
-        <button class="bars" type="button"><img class="bars-image" src="images/icons/Union.png" alt="hamburger-menu" /></button>
         <ul class="navlist">
-          <li class="nav-items"><a href="#portfolio" class="navlinks">Portfolio</a></li>
-          <li class="nav-items"><a href="#about" class="navlinks">About</a></li>
-          <li class="nav-items"><a href="#contact" class="navlinks">Contact</a></li>
+          <li class="navitem">
+            <a class="navlinks" href="#work">Portfolio</a>
+          </li>
+          <li class="navitem"><a class="navlinks" href="#about">About</a></li>
+          <li class="navitem">
+            <a class="navlinks" href="#contact">contact</a>
+          </li>
         </ul>
       </nav>
-      <div class="open hidden">
-        <div class="close">
-          <img src="img/Icon.png" alt="close-button" >
-      </div>
-        <ul class="navlistmoblie">
-          <li class="nav-items"><a href="#portfolio" class="navlinks">Portfolio</a></li>
-          <li class="nav-items"><a href="#about" class="navlinks">About</a></li>
-          <li class="nav-items"><a href="#contact" class="navlinks">Contact</a></li>
-        </ul>
-      </div>
-        
     </header>
-    <!--Main content-->
     <main class="main-content">
       <!--Headline Section-->
       <section class="head-line backgrnd-clr">
-        <!--Greeting text-->
         <h2 class="greeting greeting-text headline-box">
-          Hey there. I’m <br />
-          Tumbu Elad
+          Hey there. I’m <br class="break" />
+          <span class="ma">TUMBU</span> <span class="Al">BARTHOLOMEW ELAD</span>
           <span class="text-color">I’m a software developer</span>
         </h2>
-        <!--Supporting text-->
         <p class="supportig-text headline-box">
           I can help you build a product , feature or website Look through some
           of my work and experience! If you like what you see and have a project
           you need coded, don’t hestiate to contact me.
         </p>
         <!--social media links-->
-        <section  class="social-media headline-box">
+        <div class="social-media headline-box">
+          <a href="https://twitter.com/Elad59380989" class="social-links"
+            ><img src="images/icons/twitter.svg" alt="twitter"
+          /></a>
+          <a
+            href="https://https://www.linkedin.com/in/tumbu-elad-896ab2183/"
+            class="social-links"
+            ><img src="images/icons/Linkedin.svg" alt="linkedin"
+          /></a>
+          <a href="https://wellfound.com/u/tumbu-bartholomew-elad" class="social-links"
+            ><img src="images/icons/medium.svg" alt="medium"
+          /></a>
+          <a href="https://github.com/elad237" class="social-links"
+            ><img src="images/icons/github.svg" alt="github"
+          /></a>
+          <a href="https://wellfound.com/u/tumbu-bartholomew-elad" class="social-links"
+            ><img src="images/icons/angellist.svg" alt="angellist"
+          /></a>
+        </div>
+        <button class="disable" type="button" disabled>
+          <img src="images/desktop/Disabled.png" alt="drop down" />
+        </button>
+      </section>
+
+      
+
+      <!--My Work section-->
+       <div id="work-popup"></div>
+      <div class="work" id="work">
+      </div>
+      
+
+      <!--About me section-->
+      <section class="about" id="about">
+        <div class="about-text-container">
+          <h2 class="about-text">About me</h2>
+          <p class="about-me-intro">
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hestiate to contact me.
+          </p>
+          <button type="button" class="resume">Get My Resume</button>
+        </div>
+        <div class="about-me">
+          <section class="languages">
+            <img
+              src="images/lang-icon.png"
+              alt="language-logo"
+              class="lang-logo"
+            />
+            <h4>languages</h4>
+            <ul class="list">
+              <li class="lang java">JavaScript</li>
+              <li class="lang">Ruby</li>
+              <li class="lang">Html</li>
+              <li class="lang">CSS</li>
+            </ul>
+          </section>
+
+          <section class="frame-works">
+            <img
+              src="images/frame-work-icon.png"
+              alt="frame-work-logo"
+              class="fw-logo"
+            />
+            <h4>FrameWorks</h4>
+            <ul class="list">
+              <li class="fwork">Bootstrap</li>
+              <li class="fwork ruby">Ruby on rails</li>
+              <li class="fwork">RSpec</li>
+              <li class="fwork cap">Capybara</li>
+              <li class="fwork">Selenium</li>
+            </ul>
+          </section>
+
+          <section class="skills">
+            <img src="images/skill-icon.png" alt="skill-logo" class="sk-logo" />
+            <h4>Skills</h4>
+            <ul class="list">
+              <li class="skill">Codekit</li>
+              <li class="skill">GitHub</li>
+              <li class="skill">Codepen</li>
+              <li class="skill">Gitlab</li>
+              <li class="skill term">Terminal</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+      <!--Contact form-->
+      <section class="contact" id="contact">
+        <h2 class="contact-message">
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </h2>
+        <form
+          action="https://formspree.io/f/mnqrnjnk"
+          method="post"
+          class="contact-form"
+          novalidate
+          id="form"
+        ><small id="error-mail"></small><br>
+          <div class="form-element">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder=" Full Name"
+            />
+          </div>
+          <div class="form-element">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder=" Email address"
+            />
+            
+          </div>
+          <div class="form-element">
+            <textarea
+              name="message"
+              id="message"
+              maxlength="500"
+              placeholder=" Enter text here"
+            ></textarea>
+          </div>
+          <div class="form-element btn">
+            <button type="submit" class="sbtn">Get in touch</button> <span id="error"></span>
+          </div>
+        </form>
+      </section>
+      <!--Footer Section-->
+      <footer class="footer">
+        <div class="social-media social-bottom">
           <a href="https://twitter.com/Elad59380989" class="social-links"
             ><img src="images/icons/twitter.svg" alt="twitter"
           /></a>
@@ -67,126 +204,19 @@
           <a href="https://github.com/elad237" class="social-links"
             ><img src="images/icons/github.svg" alt="github"
           /></a>
-          <a href="#" class="social-links"
+          <a href="https://wellfound.com/u/tumbu-bartholomew-elad" class="social-links"
             ><img src="images/icons/angellist.svg" alt="angellist"
           /></a>
-        </section >
-        <img src="images/icons/Action.png" alt="scroll button" class="scroll">
-      </section>
-
-      <div id="work-popup" class="hidden"></div>
-      <section class="portfolio-wrapper" id="portfolio">
-        <div class="work-heading">
-        <h2 class="portfolio-header">My Recent <br>Works</h2>
-        <span class="line"></span>
-    </div>
-        <div class="portfolio-project" id="work">
         </div>
-    </section>
-    <!-- ABOUT MYSELF SECTION -->
-    <section class="about-wrapper" id="about">
-        <section class="about-content">
-            <h2 class="about-content-header">About me</h2>
-            <p class="about-content-text">
-                I can help you build a product , feature or website Look through some of my work and experience!
-                If you like what you are
-                seeing and have a project you need coded,
-                don’t hestiate to contact me.
-            </p>
-            <button class="about-content-btn">Get My Resume</button>
-        </section>
-        <section class="about-tech">
-            <div class="about-tech-stack">
-                <div class="about-tech-img">
-                    <img src="img/icon-languages.svg" alt="language icon">
-                </div>
-                <!--  LANGUAGES  -->
-                <h3 class="tech-title">Languages</h3>
-                <ul class="about-tech-items">
-                    <li>JavaScript</li>
-                    <li>Ruby</li>
-                    <li>Html</li>
-                    <li>CSS</li>
-                </ul>
-            </div>
-            <div class="about-tech-stack">
-                <div class="about-tech-img">
-                    <img src="img/icon-frameworks.svg" alt="frame icon">
-                </div>
-                <h3 class="tech-title">Frameworks</h3>
-                <ul class="about-tech-items">
-                    <li>Bootstrap</li>
-                    <li>Ruby on rails</li>
-                    <li>RSpec</li>
-                    <li>Capybara</li>
-                    <li>Selenium</li>
-                </ul>
-            </div>
-            <div class="about-tech-stack">
-                <div class="about-tech-img">
-                    <img src="img/icon-skills.svg" alt="icon-skills icon">
-                </div>
-                <h3 class="tech-title">Skills</h3>
-                <ul class="about-tech-items">
-                    <li>Codekit</li>
-                    <li>GitHub</li>
-                    <li>Codepen</li>
-                    <li>Gitlab</li>
-                    <li>Terminal</li>
-                </ul>
-            </div>
-        </section>
-    </section>
-<!-- contact form section -->
-<section class="contact" id="contact">
-    <h2 class="contact-message">
-      I'm always interested in hearing about new projects, so if you'd like
-      to chat please get in touch.
-    </h2>
-    <form
-      action="https://formspree.io/f/xyyvjapw" method="post" class="contact-form"
-      novalidate id="form" ><small id="error-mail"></small><br>
-      
-      <div class="form-element">
-        <input type="text"  name="name" id="name" maxlength="30" placeholder=" Full Name" required/>
-      </div>
-      <div class="form-element">
-        <input type="email" name="email" id="email" placeholder=" Email address" required/> 
-      </div>
-      <div class="form-element">
-        <textarea name="message" id="message" maxlength="500" placeholder=" Enter text here" required ></textarea>
-      </div>
-      <div class="form-element btn">
-        <button type="submit" class="sbtn">Get in touch</button> <span id="error"></span>
-      </div>
-    </form>
-  </section>
-  <hr>
-  <!--Footer Section-->
-  <footer class="footer">
-    <div class="social-media social-bottom">
-      <a href="https://twitter.com/Elad59380989" class="social-links">
-        <img src="images/icons/twitter.svg" alt="twitter"/></a>
-      <a href="https://https://www.linkedin.com/in/tumbu-elad-896ab2183/"
-        class="social-links"> <img src="images/icons/Linkedin.svg" alt="linkedin"/></a>
-      <a href="#" class="social-links"> <img src="images/icons/medium.svg" alt="medium"/></a>
-      <a href="https://github.com/elad237" class="social-links">
-        <img src="images/icons/github.svg" alt="github"/></a>
-      <a href="#" class="social-links" >
-        <img src="images/icons/angellist.svg" alt="angellist"/></a>
-    </div>
-    <div class="email"><a class="address-style" href="Tumbuemailhere@email.com">myemailhere@email.com</a><br>
-        <img src="img/Shape.jpg" alt="line">
-    </div>
-  </footer>
-
-</div>
-
-<script src="apps.js"></script>
-<script src="popup.js"></script>
-<script src="https://kit.fontawesome.com/4f6141f962.js" crossorigin="anonymous"></script>
-<script src="formvalidation.js"></script>
-
+        <div class="email">
+          <a class="address-style" href="tumbu.elad@gmail.com"
+            >myemailhere@email.com</a
+          >
+        </div>
+      </footer>
     </main>
+    <script src="js/app.js"></script>
+    <script src="js/popup.js"></script>
+   
   </body>
 </html>
